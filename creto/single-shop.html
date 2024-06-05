@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<title>LATINO STORE</title>
+	<!-- =================== META =================== -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="assets/img/favicon.png">
+	<!-- =================== STYLE =================== -->
+	<link rel="stylesheet" href="assets/css/slick.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/jquery-ui.css">
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="home">
+	<!--================ PRELOADER ================-->
+	<div class="preloader-cover">
+		<div class="preloader">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<!--============== PRELOADER END ==============-->
+	<!-- ================= HEADER ================= -->
+	<!-- =============== HEADER END =============== -->
+	
+	<!-- ================ HEADER-TITLE ================ -->
+	<section class="s-header-title">
+		<div class="container">
+			<h1>LATINO Store</h1>
+			<ul class="breadcrambs">
+				<li> <h3>يرجي ملأ الاستمارة</h3> </li>
+			</ul>
+		</div>
+	</section>
+	<!-- ============== HEADER-TITLE END ============== -->
+
+	<!-- ============== S-SINGLE-PRODUCT ============== -->
+	<section class="s-single-product">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-5">
+					<!--===== SLIDER-SINGLE-FOR =====-->
+					<div class="slider-single-for">
+						<div class="slide-single-for">
+							<a href="assets/img/MONTREBLAN.jpg" id="blanc" class="single-for-img" data-fancybox="prod1">
+								<img src="assets/img/MONTREBLAN.jpg" alt="img">
+							</a>
+						</div>
+						<div class="slide-single-for">
+							<a href="assets/img/single-slider-2.jpg" id="bleu" class="single-for-img" data-fancybox="prod1">
+								<img src="assets/img/MONTREBLEU.jpg" alt="img">
+							</a>
+						</div>
+						<div class="slide-single-for">
+							<a href="assets/img/single-slider-3.jpg" id="bleuciel" class="single-for-img" data-fancybox="prod1">
+								<img src="assets/img/MONTREBLEUciel.jpg
+								" alt="img">
+							</a>
+						</div>
+						<div class="slide-single-for">
+							<a href="assets/img/single-slider-4.jpg" id="noir" class="single-for-img" data-fancybox="prod1">
+								<img src="assets/img/MONTREnoir.jpg" alt="img">
+							</a>
+						</div>
+						<div class="slide-single-for">
+							<a href="assets/img/single-slider-orange.jpg" id="orange" class="single-for-img" data-fancybox="prod1">
+								<img src="assets/img/MONTREorange.jpg" alt="img">
+							</a>
+						</div>
+						<div class="slide-single-for">
+							<a href="assets/img/single-slider-rouge.jpg" id="rouge" class="single-for-img" data-fancybox="prod1">
+								<img src="assets/img/MONTRErouge.jpg" alt="img">
+							</a>
+						</div>
+					</div>
+					<!--=== SLIDER-SINGLE-FOR END ===-->
+					<!--===== SLIDER-SINGLE-NAV =====-->
+
+					<!--=== SLIDER-SINGLE-NAV END ===-->
+				</div>
+				<div class="col-12 col-md-7 single-shop-left">
+					<h2 class="title">curren</h2>
+					<div class="single-price">
+						<div class="new-price">5500 دج </div>
+						<div class="old-price"> 6500 دج</div>
+					</div>
+
+
+
+                    <form action="https://api.sheetapi.rest/api/v1/sheet/HvGRoPV3AQCyYh4Le9GsK" method="post" id="sheetdb-form">
+                        <div class="frame-size">
+                            <label>اللون:</label>
+                            <ul>
+                                <li id="color-blanc">blanc</li>
+                                <li id="color-bleu">bleu</li>
+                                <li id="color-bleuciel">bleuciel</li>
+                                <li id="color-noir">noir</li>
+								<li id="color-orange" onclick="changeWatchImage('orange')">orange</li>
+								<li id="color-rouge" onclick="changeWatchImage('rouge')">rouge</li>
+                            </ul>
+                        </div>
+                        <label for="name" style="font-size: 30px ;">الاسم و اللقب</label>
+                        <input type="text" name="name" id="name" placeholder="ادخل اسمك" style="font-size: 30px; height: 70px;">
+                        <label for="phone"> رقم الهاتف</label>
+                        <li class="inp-phone"><input id="phone" type="tel" name="phone" placeholder="Phone"  style="font-size: 30px; height: 70px;"></li>
+                        <input type="hidden" name="id" id="id" value="watch1" style="font-size: 30px; height: 70px;">
+                        <input type="hidden" name="prix" id="prix" value="5500">
+
+                        <label for="wilayaSelect">حدد ولايتك:</label>
+                        <select id="wilayaSelect" name="wilaya" style="font-size: 30px; height: 70px;">
+                            <option value="">يرجى تحديد الولاية</option>
+							<option value="Tamanrasset">تمنراست</option>
+							<option value="Chlef">الشلف</option>
+							<option value="Laghouat">الأغواط</option>
+							<option value="Oum El Bouaghi">أم البواقي</option>
+							<option value="Batna">باتنة</option>
+							<option value="Bejaia">بجاية</option>
+							<option value="Biskra">بسكرة</option>
+							<option value="Blida">البليدة</option>
+							<option value="Bouira">البويرة</option>
+							<option value="Tebessa">تبسة</option>
+							<option value="Tlemcen">تلمسان</option>
+							<option value="Tizi Ouzou">تيزي وزو</option>
+							<option value="Alger">الجزائر</option>
+							<option value="Djelfa">الجلفة</option>
+							<option value="Jijel">جيجل</option>
+							<option value="Setif">سطيف</option>
+							<option value="Skikda">سكيكدة</option>
+							<option value="Sidi Bel Abbes">سيدي بلعباس</option>
+							<option value="Annaba">عنابة</option>
+							<option value="Guelma">قالمة</option>
+							<option value="Constantine">قسنطينة</option>
+							<option value="Medea">المدية</option>
+							<option value="Mostaganem">مستغانم</option>
+							<option value="Mascara">معسكر</option>
+							<option value="Ouargla">ورقلة</option>
+							<option value="Oran">وهران</option>
+							<option value="Bordj Bou Arreridj">برج بوعريريج</option>
+							<option value="Boumerdes">بومرداس</option>
+							<option value="El Tarf">الطارف</option>
+							<option value="El Oued">الوادي</option>
+							<option value="Khenchela">خنشلة</option>
+							<option value="Souk Ahras">سوق أهراس</option>
+							<option value="Tipaza">تيبازة</option>
+							<option value="Mila">ميلة</option>
+							<option value="Ain Defla">عين الدفلى</option>
+							<option value="Ain Temouchent">عين تموشنت</option>
+							<option value="Ghardaia">غرداية</option>
+							<option value="Relizane">غليزان</option>
+						</select>
+
+
+
+						<label for="wilayaSelect">ادخل عنوانك:</label>
+                        <input type="text" name="adresse" id="adresse" placeholder=" ادخل عنوانك" style="font-size: 30px; height: 70px; width: 100%;">
+
+
+
+
+
+                        <label for="delivery" class="form-label">نوغ التوصيل</label>
+                        <select id="delivery" name="delivery" class="form-select" style="font-size: 30px; height: 70px;">
+                            <option value="">يرجي اختيار نوع التوصيل</option>
+                            <option value="point_relais">الى مكتب التوصيل</option>
+                            <option value="domicile">الى باب المنزل</option>
+                        </select>
+
+                        <div class="mb-3">
+                            <label for="delivery_price" class="form-label">سعر التصويل</label>
+                            <input type="text" id="delivery_price" name="delivery_price" class="form-control" readonly>
+                        </div>
+
+                        <input type="" name="color" class="hidden" required>
+                        <div class="single-quanity">
+                            <label>الكمية:</label>
+                            <input id="quanity" name="value" value="1">
+                        </div>
+                        <h3 class="alert" id="alert"></h3>
+                        <div class="single-btn-cover">
+                            <a href="#" class="btn btn-buy-now"><span><input type="submit" value="اطلب الآن" class="btn btn-buy-now"></span></a>
+                        </div>
+						<div class="mb-3">
+                            <label for="total" class="form-label"> الثمن الكلي</label>
+                            <input type=" " name="total" id="total" readonly style="border: none;">
+                        </div>
+                        
+                    </form>
+
+				
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ============ S-SINGLE-PRODUCT END ============ -->
+
+	<!--=============== SINGLE-SHOP-TABS ===============-->
+	<section class="single-shop-tabs">
+		<div class="container">
+			<div class="tab-wrap">
+				<ul class="tab-nav product-tabs">
+					<li class="item" rel="tab1"><span>الوصف</span></li>
+					<li class="item" rel="tab2"><span>التعليقات(2)</span></li>
+				</ul>
+				<div class="tabs-content">
+					<div class="tab tab1">
+						<div class="row">
+							<div class="col-lg-6">
+								<p>ساعات CURREN الأصلية ⌚</p>
+								<p>ساعات بمواصفات عالية وجودة ممتازة</p>
+								<p>الساعة مقاومة للماء💧</p>
+								<p> لون ثابت إطار مقاوم للصداء</p>
+								<p>محرك كوارتز اصلي</p>
+
+							</div>
+							<div class="col-lg-6">
+							</div>
+						</div>
+					</div>
+					<div class="tab tab2">
+						<ul class="reviews-list">
+							<li class="item">
+								<div class="review-item">
+									<div class="review-avatar"><img src="assets/img/testimonials-1.png" alt="img"></div>
+									<div class="review-content">
+										<div class="name">tarek zitani</div>
+										<div class="date">Dec 26, 2023</div>
+										<p class="review-comment">كاليتي روعة و توصيل مثالي</p>
+									</div>
+								</div>
+								<ul class="child">
+									<li class="item">
+										<div class="review-item">
+											<div class="review-avatar"><img src="assets/img/testimonials-2.png" alt="img"></div>
+											<div class="review-content">
+												<div class="name">amir zebati</div>
+												<div class="date">MARS 27, 2024</div>
+												<p class="review-comment">montre de hyper qualité</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="reviews-form">
+							<h3 class="title">Leave a Comment</h3>
+							<form action="/">
+								<ul class="form-cover">
+									<li class="inp-name"><input type="text" name="your-name" placeholder="Name"></li>
+									<li class="inp-email"><input type="email" name="your-email" placeholder="E-mail"></li>
+									<li class="inp-text"><textarea name="your-text" placeholder="Message"></textarea></li>
+								</ul>
+								<div class="checkbox-wrap">
+									<div class="checkbox-cover">
+										<input type="checkbox">
+										<p>By using this form you agree with the storage and handling of your data by this website.</p>
+									</div>
+								</div>
+								<div class="btn-form-cover">
+									<button type="submit" class="btn"><span>submit comment</span></button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="tab tab3">
+						<div class="faq-item">
+							<h5 class="title"><span>I already own a bike. Why do I need bike share?</span></h5>
+							<p>The power of enabling one-way trips rather than a forced round trip due to having a personal vehicle is transformative. Bike share opens up mobility options that weren’t previously convenient and makes public transit more viable. It also enables greater access to multi-modal trips where you may use bike share for the first part of your trip, but may take the trolley, a car service or even catch a ride with a friend on the way home.</p>
+						</div>
+						<div class="faq-item">
+							<h5 class="title"><span>Tell me about the bikes.</span></h5>
+							<p>Our smart-bikes from Social Bicycles (SoBi) have brains! This sets them apart from other bike-share systems. On the back of the bike is a GPS-enabled, solar-powered panel with an on-board lock.</p>
+							<p>With this panel, you can check out the bike, unlock and lock it, put it on hold and report a problem. It will even let you know how many miles you rode and how many calories you burned by logging into your Social Bicycles account.</p>
+							<p>One of our favorite features on our bikes is the chainless shaft drive. You won’t have to worry about your pants getting caught or getting greasy! They also have nifty extras like 3 speeds, an adjustable seat post, front and rear lights that illuminate automatically, a large, full-sized basket, puncture resistant tires and a bell (just above the left hand grip – give it a turn!).</p>
+						</div>
+						<div class="faq-item">
+							<h5 class="title"><span>What are Coast Hub Stations and Park and Go racks?</span></h5>
+							<p>A Coast Hub station is where you go to find, check out and return a bike. It’s equipped with bikes and racks that the bikes are locked to.</p>
+							<p>Locking outside of a station will incur a $3 convenience fee. You’ll also see designated Park and Go racks at businesses around town. This is free Coast parking, so feel free to park here as well!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--============= SINGLE-SHOP-TABS END =============-->
+
+
+
+	<!--==================== FOOTER ====================-->
+	<footer>
+		<div class="container">
+
+			<div class="row footer-item-cover">
+				<div class="footer-touch col-md-7 col-lg-8">
+					<h6>stay in touch</h6>
+					<ul class="footer-soc social-list">
+						<li><a target="_blank" href="https://www.facebook.com/montgrey.dz?mibextid=JRoKGi"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="https://wa.me/+213783233255"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="https://www.instagram.com/latinostore.dz/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="https://www.youtube.com"><i class="fa fa-tik-tok" aria-hidden="true"></i></a></li>
+					</ul>
+					<div class="footer-autor">تواصلوا معنا عبر البريد?هل لديكم اي تساؤلات: <a href="mailto:rovadex@gmail.com">monteygreydz@gmail.com</a></div>
+				</div>
+
+			</div>
+
+		</div>
+	</footer>
+	<!--================== FOOTER END ==================-->
+
+	<!--===================== TO TOP =====================-->
+
+	<!--================ POPUP VIDEO END ================-->
+	<!--=================== SCRIPT	===================-->
+	<script src="assets/js/jquery-2.2.4.min.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+	<script src="assets/js/jquery-ui.js"></script>
+	<script src="assets/js/jquery.nice-select.js"></script>
+	<script src="assets/js/jquery.fancybox.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script>
+var form = document.getElementById('sheetdb-form');
+var alertElement = document.getElementById('alert');
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    var colorInput = document.querySelector('input[name="color"]');
+    var colorValue = colorInput.value.trim();
+
+    if (colorValue === "" || colorValue === "non") {
+        alertElement.textContent = "Please choose a color.";
+        alertElement.style.display = 'block';
+        return;
+    }
+
+    var inputs = form.querySelectorAll('input[type="text"]');
+    for (var i = 0; i < inputs.length; i++) {
+        if (inputs[i].value.trim() === "") {
+            alertElement.textContent = "Please fill in all fields.";
+            alertElement.style.display = 'block';
+            return;
+        }
+    }
+
+    // If all validations pass, submit the form
+    fetch(form.action, {
+        method: "POST",
+        body: new FormData(form),
+    }).then(function(response) {
+        return response.json();
+    }).then(function(html) {
+        // Redirect to the completion page
+        window.location.href = 'COMPLETECOMAND.html';
+    });
+});
+
+
+
+
+
+const deliveryPrices = {
+            "Tamanrasset": { point_relais: 800, domicile: 1000 },
+            "Chlef": { point_relais: 500, domicile: 700 },
+            "Laghouat": { point_relais: 600, domicile: 800 },
+            "Oum El Bouaghi": { point_relais: 550, domicile: 750 },
+            "Batna": { point_relais: 600, domicile: 800 },
+            "Bejaia": { point_relais: 550, domicile: 750 },
+            "Biskra": { point_relais: 600, domicile: 800 },
+            "Blida": { point_relais: 500, domicile: 700 },
+            "Bouira": { point_relais: 550, domicile: 750 },
+            "Tebessa": { point_relais: 600, domicile: 800 },
+            "Tlemcen": { point_relais: 550, domicile: 750 },
+            "Tizi Ouzou": { point_relais: 500, domicile: 700 },
+            "Alger": { point_relais: 400, domicile: 500 },
+            "Djelfa": { point_relais: 550, domicile: 750 },
+            "Jijel": { point_relais: 600, domicile: 800 },
+            "Setif": { point_relais: 550, domicile: 750 },
+            "Skikda": { point_relais: 600, domicile: 800 },
+            "Sidi Bel Abbes": { point_relais: 550, domicile: 750 },
+            "Annaba": { point_relais: 600, domicile: 800 },
+            "Guelma": { point_relais: 550, domicile: 750 },
+            "Constantine": { point_relais: 600, domicile: 800 },
+            "Medea": { point_relais: 550, domicile: 750 },
+            "Mostaganem": { point_relais: 500, domicile: 700 },
+            "Mascara": { point_relais: 550, domicile: 750 },
+            "Ouargla": { point_relais: 600, domicile: 800 },
+            "Oran": { point_relais: 500, domicile: 700 },
+            "Bordj Bou Arreridj": { point_relais: 550, domicile: 750 },
+            "Boumerdes": { point_relais: 500, domicile: 700 },
+            "El Tarf": { point_relais: 600, domicile: 800 },
+            "El Oued": { point_relais: 600, domicile: 800 },
+            "Khenchela": { point_relais: 600, domicile: 800 },
+            "Souk Ahras": { point_relais: 600, domicile: 800 },
+            "Tipaza": { point_relais: 500, domicile: 700 },
+            "Mila": { point_relais: 600, domicile: 800 },
+            "Ain Defla": { point_relais: 500, domicile: 700 },
+            "Ain Temouchent": { point_relais: 500, domicile: 700 },
+            "Ghardaia": { point_relais: 600, domicile: 800 },
+            "Relizane": { point_relais: 500, domicile: 700 }
+            // Add more Wilaya and their delivery prices here...
+        };
+
+        document.getElementById('wilayaSelect').addEventListener('change', updateDeliveryPrice);
+        document.getElementById('delivery').addEventListener('change', updateDeliveryPrice);
+
+        function updateDeliveryPrice() {
+            const wilaya = document.getElementById('wilayaSelect').value;
+            const deliveryType = document.getElementById('delivery').value;
+
+            if (wilaya && deliveryType) {
+                const price = deliveryPrices[wilaya][deliveryType];
+                document.getElementById('delivery_price').value = price;
+
+                const basePrice = 5500; // Base price of the product
+                const totalPrice = basePrice + price;
+                document.getElementById('total').value = totalPrice;
+            } else {
+                document.getElementById('delivery_price').value = '';
+                document.getElementById('total').value = 5500; // Reset to base price
+            }
+        }
+
+        document.getElementById('sheetdb-form').addEventListener('submit', function(event) {
+            const wilaya = document.getElementById('wilayaSelect').value;
+            const deliveryType = document.getElementById('delivery').value;
+
+            if (!wilaya || !deliveryType) {
+                event.preventDefault();
+                document.getElementById('alert').innerText = 'يرجى اختيار ولاية ونوع التسليم';
+            }
+        });
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
